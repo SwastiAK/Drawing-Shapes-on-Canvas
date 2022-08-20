@@ -89,8 +89,8 @@ def draw(direction, oldx, oldy, newx, newy):
     if(direction == 'l'):
         draw_line = canvas.create_line(oldx, oldy, newx, newy, width = 3, fill = color)
         
-root.bind("{c}", circle)
-root.bind("{r}", rectangle)
-root.bind("{l}", line)
+root.bind("<c>", circle)
+root.bind("<r>", rectangle)
+root.bind("<l>", line)
 
 root.mainloop()
